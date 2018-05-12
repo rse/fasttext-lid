@@ -36,7 +36,7 @@ class LID {
         }, options)
         this.classifier = new Classifier(this.options.model)
     }
-    predict (text, k = 3) {
+    predict (text, k = 1) {
         return new Promise((resolve, reject) => {
             this.classifier.predict(text, k, (err, res) => {
                 if (err)

@@ -43,13 +43,13 @@ Usage
     const LID = require("fasttext-lid")
     const lid = new LID()
 
-    console.log(await lid.predict("FastText-LID provides a great language identification", 1))
-    console.log(await lid.predict("FastText-LID bietet eine hervorragende Sprachidentifikation", 1))
-    console.log(await lid.predict("FastText-LID fornisce un ottimo linguaggio di identificazione", 1))
-    console.log(await lid.predict("FastText-LID fournit une excellente identification de la langue", 1))
-    console.log(await lid.predict("FastText-LID proporciona una gran identificación de idioma", 1))
-    console.log(await lid.predict("FastText-LID обеспечивает отличную идентификацию языка", 1))
-    console.log(await lid.predict("FastText-LID提供了很好的語言識別", 1))
+    console.log(await lid.predict("FastText-LID provides a great language identification"))
+    console.log(await lid.predict("FastText-LID bietet eine hervorragende Sprachidentifikation"))
+    console.log(await lid.predict("FastText-LID fornisce un ottimo linguaggio di identificazione"))
+    console.log(await lid.predict("FastText-LID fournit une excellente identification de la langue"))
+    console.log(await lid.predict("FastText-LID proporciona una gran identificación de idioma"))
+    console.log(await lid.predict("FastText-LID обеспечивает отличную идентификацию языка"))
+    console.log(await lid.predict("FastText-LID提供了很好的語言識別"))
 })()
 ```
 
@@ -64,6 +64,18 @@ Output:
 [ { lang: 'ru', prob: 0.9899846911430359 } ]
 [ { lang: 'zh', prob: 0.8515647649765015 } ]
 ```
+
+Application Programming Interface
+---------------------------------
+
+- `new LID({ model?: string }): LID`:<br/>
+  Instantiate a new Language Identification object.
+  Optionally, you could pass it the path to a different FastText model.
+  The default is to use the LID-176 model which was downloaded on `npm install`.
+
+- `LID::predict(text: string, k?: number }): [ { lang: string, prob: number }* ]`:<br/>
+  Predict the language for `text` and return the first `k` predictions (in decreasing probability order).
+  The default is `1` for `k`.
 
 Alternatives
 ------------
