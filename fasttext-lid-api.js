@@ -23,8 +23,7 @@
 */
 
 /*  internal requirements  */
-const path           = require("path")
-const childProcess   = require("child_process")
+const path = require("path")
 
 /*  external requirements  */
 const { Classifier } = require("fast-text")
