@@ -17,7 +17,7 @@ This is a small JavaScript library for use in [Node.js](https://nodejs.org/) env
 providing the possibility to identify the language of a piece of text
 with the help of the Wikipedia/Tatoeba/SETimes-derived
 [pre-trained LID-176 model](https://fasttext.cc/docs/en/language-identification.html)
-and the efficient [Facebook FastText](https://fasttext.cc/) Machine-Learning-based
+and the fast and efficient [Facebook FastText](https://fasttext.cc/) Machine-Learning-based
 text classification engine. The classification result is a list of
 identified languages (identified by their two-character ISO codes) and their
 classification probability.
@@ -27,9 +27,9 @@ NOTICE: The LID-176 model is licensed under
 of this module. It is 126MB in size and detects 176 languages. It is automatically downloaded from
 its external origin on `npm install`. Applications using this Node.js
 module have to take the license of this external model into account.
-The [franc](http://wooorm.com/franc/) (MIT license) and
-[cld](https://github.com/dachev/node-cld) (Apache license) modules are decent
-alternatives, too.
+The module [cld](https://github.com/dachev/node-cld) (Apache licensed, 160 languages)
+and the module [franc](http://wooorm.com/franc/) (MIT licensed, 188 or 400 languages)
+are decent alternatives.
 
 Installation
 ------------
