@@ -1,0 +1,41 @@
+{
+    "name":        "fasttext-lid",
+    "version":     "0.9.1",
+    "description": "Language Identification with Facebook FastText",
+    "keywords":    [ "fasttext", "language", "identification", "lid" ],
+    "main":        "fasttext-lid-api.js",
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/rse/fasttext-lid.git"
+    },
+    "author": {
+        "name":  "Ralf S. Engelschall",
+        "email": "rse@engelschall.com",
+        "url":   "http://engelschall.com"
+    },
+    "license":  "MIT",
+    "homepage": "https://github.com/rse/fasttext-lid",
+    "bugs":     "https://github.com/rse/fasttext-lid/issues",
+    "devDependencies": {
+        "eslint":                  "4.19.1",
+        "eslint-config-standard":  "11.0.0",
+        "eslint-plugin-standard":  "3.1.0",
+        "eslint-plugin-promise":   "3.7.0",
+        "eslint-plugin-import":    "2.11.0",
+        "eslint-plugin-node":      "6.0.1"
+    },
+    "dependencies": {
+        "sprintfjs":               "1.2.9",
+        "request":                 "2.85.0",
+        "rimraf":                  "2.6.2",
+        "fast-text":               "0.1.0"
+    },
+    "engines": {
+        "node":                    ">=8.0.0"
+    },
+    "scripts": {
+        "prepublishOnly": "eslint --config eslint.yaml fasttext-lid-*.js",
+        "install":        "node ./fasttext-lid-npm.js install",
+        "uninstall":      "node ./fasttext-lid-npm.js uninstall"
+    }
+}
