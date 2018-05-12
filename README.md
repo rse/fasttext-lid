@@ -27,6 +27,9 @@ NOTICE: The LID-176 model is licensed under
 of this module. It is 126MB in size and detects 176 languages. It is automatically downloaded from
 its external origin on `npm install`. Applications using this Node.js
 module have to take the license of this external model into account.
+The [franc](http://wooorm.com/franc/) (MIT license) and
+[cld](https://github.com/dachev/node-cld) (Apache license) modules are decent
+alternatives, too.
 
 Installation
 ------------
@@ -76,13 +79,6 @@ Application Programming Interface
 - `LID::predict(text: string, k?: number }): [ { lang: string, prob: number }* ]`:<br/>
   Predict the language for `text` and return the first `k` predictions (in decreasing probability order).
   The default is `1` for `k`.
-
-Alternatives
-------------
-
-The [franc](http://wooorm.com/franc/) and
-[cld](https://github.com/dachev/node-cld) modules are decent
-alternatives.
 
 License
 -------
