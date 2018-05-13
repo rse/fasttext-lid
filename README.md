@@ -22,9 +22,12 @@ text classification engine. The classification result is a list of
 identified languages (identified by their two-character ISO codes) and their
 classification probability.
 
-NOTICE: The LID-176 model is licensed under
+NOTICE
+------
+
+The LID-176 model is licensed under
 [CC-BY-SA](http://creativecommons.org/licenses/by-sa/3.0/) and not part
-of this module. It is 126MB in size and detects 176 languages. It is automatically downloaded from
+of this module. It is 126 MB in size and detects 176 languages. It is automatically downloaded from
 its external origin on `npm install`. Applications using this Node.js
 module have to take the license of this external model into account.
 The module [cld](https://github.com/dachev/node-cld) (Apache licensed, 160 languages)

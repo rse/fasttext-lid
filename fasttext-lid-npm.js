@@ -101,7 +101,7 @@ if (process.argv.length !== 3) {
 if (process.argv[2] === "install") {
     /*  installation procedure  */
     if (!fs.existsSync(destfile)) {
-        console.log("++ fetching external Facebook FastText LID-176 model (126MB)")
+        console.log("++ fetching external Facebook FastText LID-176 model (126 MB)")
         downloadData(srcurl).then((data) => {
             fs.writeFileSync(destfile, data, { encoding: null })
             console.log("-- OK: done")
