@@ -25,7 +25,7 @@
         "eslint-plugin-node":      "6.0.1"
     },
     "dependencies": {
-        "npm-install-fetch":       "0.9.7",
+        "npm-install-fetch":       "0.9.8",
         "fast-text":               "0.1.0"
     },
     "engines": {
