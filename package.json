@@ -17,7 +17,7 @@
     "homepage": "https://github.com/rse/fasttext-lid",
     "bugs":     "https://github.com/rse/fasttext-lid/issues",
     "devDependencies": {
-        "eslint":                  "4.19.1",
+        "eslint":                  "5.0.0",
         "eslint-config-standard":  "11.0.0",
         "eslint-plugin-standard":  "3.1.0",
         "eslint-plugin-promise":   "3.8.0",
@@ -25,9 +25,7 @@
         "eslint-plugin-node":      "6.0.1"
     },
     "dependencies": {
-        "sprintfjs":               "1.2.9",
-        "request":                 "2.87.0",
-        "rimraf":                  "2.6.2",
+        "npm-install-fetch":       "0.9.7",
         "fast-text":               "0.1.0"
     },
     "engines": {
@@ -35,7 +33,11 @@
     },
     "scripts": {
         "prepublishOnly": "eslint --config eslint.yaml fasttext-lid-*.js",
-        "install":        "node ./fasttext-lid-npm.js install",
-        "uninstall":      "node ./fasttext-lid-npm.js uninstall"
+        "install":        "npm-install-fetch"
+    },
+    "npm-install-fetch": {
+        "name":    "FastText LID-176 model",
+        "input":   "https://s3-us-west-1.amazonaws.com/fasttext-vectors/supervised_models/lid.176.bin",
+        "output":  "fasttext-lid-model.bin"
     }
 }
