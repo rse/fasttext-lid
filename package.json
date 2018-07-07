@@ -1,6 +1,6 @@
 {
     "name":        "fasttext-lid",
-    "version":     "1.0.0",
+    "version":     "1.0.1",
     "description": "Language Identification with Facebook FastText",
     "keywords":    [ "fasttext", "language", "identification", "lid" ],
     "main":        "fasttext-lid-api.js",
