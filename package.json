@@ -37,7 +37,7 @@
     },
     "npm-install-fetch": {
         "name":    "FastText LID-176 model",
-        "input":   "https://s3-us-west-1.amazonaws.com/fasttext-vectors/supervised_models/lid.176.bin",
+        "input":   "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin",
         "output":  "fasttext-lid-model.bin"
     }
 }
