@@ -6,7 +6,7 @@
     "main":        "fasttext-lid-api.js",
     "repository": {
         "type": "git",
-        "url":  "https://github.com/rse/fasttext-lid.git"
+        "url":  "git+https://github.com/rse/fasttext-lid.git"
     },
     "author": {
         "name":  "Dr. Ralf S. Engelschall",
